@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="https://windesheim.nl/assets/favicons/favicon.ico">
+    <title>JWT</title>
+</head>
+<body>
+    <a href="index.html"><button id="homebutton">Homepage</button></a>
+    <!-- Register page -->
+    <div class="container hidden" id="registerPage">
+        <div class="input">
+            <span class="label">E-mail:</span>
+            <input type="text" name="email" id="email1">
+        </div>
+        <div class="input">
+            <span class="label">Password:</span>
+            <input type="password" name="password" id="password1">
+        </div>
+        <div class="input">
+            <span class="label">Confirm:</span>
+            <input type="password" name="confirm" id="confirm">
+        </div>
+        <div class="input">
+            <span class="label">First name:</span>
+            <input type="text" name="firstname" id="firstname">
+        </div>
+        <div class="input">
+            <span class="label">Last name:</span>
+            <input type="text" name="lastname" id="lastname">
+        </div>
+        <div class="input">
+            <button id="register">Register</button>
+        </div>
+        <p>Already have an account? <a onclick="showPage('loginPage')">Login</a></p>
+    </div>
+    <!-- Login page -->
+    <div class="container" id="loginPage">
+        <div class="input">
+            <span class="label">E-mail:</span>
+            <input type="text" name="email" id="email2">
+        </div>
+        <div class="input">
+            <span class="label">Password:</span>
+            <input type="password" name="password" id="password2">
+        </div>
+        <div class="input">
+            <button id="login">Login</button>
+        </div>
+        <p>Don't have an account yet? <span onclick="showPage('registerPage')">Register</span></p>
+    </div>
+    <!-- User info page -->
+    <div class="container hidden" id="mainPage">
+        <span class="welcome" id="welcome"></span>
+        <button id="logout" onclick="logout()">Logout</button>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

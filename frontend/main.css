@@ -1,7 +1,9 @@
 body{
     background-color: #222;
 }
-
+#homebutton{
+    width: 100px;
+}
 .container{
     position: absolute;
     display: inline-block;
@@ -47,4 +49,7 @@ button{
 
 .hidden{
     display: none;
+}
+.werknemersafbeeldingen{
+   width: 100px;
 }
